@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ProyectoSoft2.Models.Curso.ListaAlumnosAsignadosACurso>
+
+<table class="table table-bordered table-responsive" cellspacing="0" width="100%" id="tablaAlumnoCurso">
+    <thead>
+        <tr>
+            <th class="text-center"><div class="smart-form pull-left"> <label class="checkbox"><input id="SelectAll" type="checkbox" name="checkboxItem"><i></i></label></div> Alumnos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr id="@item.IdAlumno">
+
+                    <td>
+                        <div class="smart-form">
+                            <label class="checkbox" style="padding-left:20px">
+                                @Html.EditorFor(modelItem => item.EstaAsignado)<i></i>
+                                @Html.DisplayFor(modelItem => item.Nombre)
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<hr />
+<div class="form-group pull-right" style="padding-bottom:50px;">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+    @if (@Model != null)
+    {<button type="button" onclick="GuardarSeleccion('@ViewBag.IdCurso','tablaAlumnoCurso', 'GuardarAsignacionDeAlumnosACurso', 'Cursos')" class="btn btn-success">Guardar</button>}
+</div>
+<br />
+<br />
+
+<script>
+    $(document).ready(function () {
+        $("#tablaAlumnoCurso").dataTable();
+        $('input[type="checkbox"]').change(function () {
+            var checked = $(this).prop('checked');
+        });
+
+        $('#SelectAll').change(function () {
+            var table = new $.fn.dataTable.Api('#tablaAlumnoCurso');
+            var rows = table.rows({ search: 'applied' }).nodes();
+            $('input[type="checkbox"]', rows).prop('checked', this.checked);
+        })
+
+
+    });
+
+</script>

@@ -1,0 +1,56 @@
+﻿@model ProyectoSoft2.Models.Role.RoleViewModel
+
+@Scripts.Render("~/bundles/jqueryval")
+
+    <form class="smart-form" id="IdForm">
+       @Html.HiddenFor(model => model.Id)
+         <fieldset style="padding-top:0px;">
+            <div class="row">
+                <section>
+                    <span>Nombre de Rol</span>
+                    <label class="input">
+                        @Html.EditorFor(model => model.NombreRole, new { htmlAttributes = new { @class = "form-control" } })
+                    </label>
+                    @Html.ValidationMessageFor(model => model.NombreRole, "", new { @class = "text-danger" })
+                </section>
+            </div>
+        </fieldset>
+ 
+        <button type="button" onclick="Guardar('@Model.Accion')" class="btn btn-success btn-lg">Guardar</button>
+    </form>
+
+<script>
+
+        function Guardar(Accion) {
+            if (!$("#IdForm").valid()) { return false; }
+            LoadWaitNotification();
+            $.ajax({
+                url: "/" + ControllerActual + "/" + Accion,
+                type: 'POST',
+                dataType: 'json',
+                data: $('#IdForm').serialize(),
+                success: function (data) {
+                    if (data.Estado) {
+                        ShowboxSuccess(data.Mensaje, data.Titulo);
+                        new $.fn.dataTable.Api("#IdTabla").ajax.reload();
+                        $("#MyModal").modal("hide");
+                    } else ShowboxError(data.Mensaje, data.Titulo);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    ShowboxError(textStatus, "Error"); alert(textStatus);
+                    UnloadWaitNotification();
+                },
+                complete: function () { UnloadWaitNotification(); }
+            });
+        };
+
+
+
+
+
+
+
+
+
+
+</script>

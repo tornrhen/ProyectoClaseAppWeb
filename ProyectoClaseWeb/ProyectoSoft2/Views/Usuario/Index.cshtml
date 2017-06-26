@@ -1,0 +1,181 @@
+﻿
+@{
+    ViewBag.Title = "Usuarios";
+}
+
+    <div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-user"></i> </span>
+        <h2><strong>Lista de Usuarios</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            <a href="/Usuario/CrearUsuario" class="btn btn-primary"><i class="fa fa-plus fa-fw"></i>   Crear Usuario</a>
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body no-padding">
+            <table class="table table-bordered table-responsive table-hover" id="IdTabla" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Acciones</th>           
+                        <th>Cuenta de Usuario</th>
+                        <th>Nombre</th>
+                        <th> Apellido</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Correo Electronico</th>
+                        <th>Tipo de Usuario </th>
+                        <th> Estado </th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    
+<script>
+
+    function MostrarEditarCuenta(id)
+    {
+        LoadWaitNotification();
+        $.ajax({
+            url: "/Usuario/EditarCuentaUsuario",
+            type: 'get',
+            data: { Id: id },
+            success: function (data) {
+                $("#MyModalTitle").html("Editar Cuenta de Usuario");
+                $("#MyModalBody").html(data);
+                $("#MyModal").modal("show");
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                ShowboxError(textStatus, "Error"); alert(textStatus);
+                UnloadWaitNotification();
+            },
+            complete: function () { UnloadWaitNotification(); }
+        });
+    }
+
+    function MostrarEditarInfo(id) {
+        LoadWaitNotification();
+        $.ajax({
+            url: "/Usuario/EditarInfoUsuario",
+            type: 'get',
+            data: { Id: id },
+            success: function (data) {
+                $("#MyModalTitle").html("Editar Informacion Personal");
+                $("#MyModalBody").html(data);
+                $("#MyModal").modal("show");
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                ShowboxError(textStatus, "Error"); alert(textStatus);
+                UnloadWaitNotification();
+            },
+            complete: function () { UnloadWaitNotification(); }
+        });
+    }
+
+
+    function MostrarResetContrasena(id)
+    {
+        LoadWaitNotification();
+        $.ajax({
+            url: "/Usuario/ResetContrasena",
+            type: 'get',
+            data: { Id: id },
+            success: function (data) {
+                $("#MyModalTitle").html("Editar Contraseña");
+                $("#MyModalBody").html(data);
+                $("#MyModal").modal("show");
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                ShowboxError(textStatus, "Error"); alert(textStatus);
+                UnloadWaitNotification();
+            },
+            complete: function () { UnloadWaitNotification(); }
+        });
+
+
+    }
+
+    $(document).ready(function () {
+
+        $("#IdTabla").dataTable({
+        ajax: {
+            url: "@Url.Action("ListarUsuario", "Usuario")",
+            type: "GET",
+            dataSrc: function (data) {
+                return data;
+            }
+        },
+        responsive: true,
+        "sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>l>r>" +
+        "t" +
+        "<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+        //"autoWidth": true,
+        "language": {
+            "emptyTable": "No se encontraron resultados.",
+            "search": '<div class="icon-addon addon-md"><label for="search" class="glyphicon glyphicon-search"></label>',
+            "paginate": {
+                first: "Primero",
+                previous: "Anterior",
+                next: "Siguiente",
+                last: "Ultimo"
+            },
+            "lengthMenu": " _MENU_ ",
+            "info": "Mostrando registros del _START_ al _END_ de _TOTAL_ registros totales.",
+            "infoEmpty": "No hay registros para mostrar.",
+        },
+        columns: [
+            {
+                data: null,
+                render: function (data) {
+                    var opciones = '<div class="btn-group display-inline pull-left text-align-left">' + '<button class="btn btn-xs btn-info dropdown-toggle ';
+                    opciones += '" data-toggle="dropdown" aria-expanded="false"> Opciones <i class="fa fa-caret-down fa-lg"></i> </button><ul class="dropdown-menu dropdown-menu-xs pull-right">';
+                    opciones += ('<li><a href="javascript:void(0);" onclick="MostrarEditarCuenta(!' + data.Id + '!)"><i class="fa fa-pencil fa-lg fa-fw"></i> Editar Cuenta</a></li>').replace(new RegExp("!", 'g'), "'");
+                    opciones += ('<li><a href="javascript:void(0);" onclick="MostrarEditarInfo(!' + data.Id + '!)"><i class="fa fa-pencil fa-lg fa-fw"></i> Editar Perfil</a></li>').replace(new RegExp("!", 'g'), "'");
+                    opciones += ('<li><a href="javascript:void(0);" onclick="MostrarResetContrasena(!' + data.Id + '!)"><i class="fa fa-pencil fa-lg fa-fw"></i> Cambiar Contraseña</a></li>').replace(new RegExp("!", 'g'), "'");
+                    opciones += '</ul></div>';
+                    return opciones;
+                }
+            },
+            {
+                data: "UserName"
+            },
+            {
+                data: "FirstName"
+            },
+            {
+                data: "LastName"
+            },
+          
+            {
+                data: null,
+                render: function (data) {
+                    return moment(data.BirthDate).format("DD/MM/YYYY");
+                }
+            },
+            {
+                data: "Email"
+            },
+            {
+                data: "TipoUsuario"
+            },
+            {
+                data: null,
+                render: function (data) {
+                     return data.Estado ? '<span class="center-block padding-5 label label-success"><i class="fa fa-check"></i></span>' : '<span class="center-block padding-5 label label-danger"><i class="fa fa-trash"></i></span>';
+                }
+            },
+
+
+        ]
+    });
+
+
+    })
+</script>
+
+}

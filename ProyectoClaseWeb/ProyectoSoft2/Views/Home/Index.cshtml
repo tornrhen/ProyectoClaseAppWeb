@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Inicio";
+}
+
+@if (User.IsInRole("Alumno"))
+{
+    { Html.RenderAction("MostrarModulosMatriculados"); }
+}
+
+@if (User.IsInRole("Instructor"))
+{
+    { Html.RenderAction("MostrarModulosMatriculadosInstructor"); }
+}
+
+

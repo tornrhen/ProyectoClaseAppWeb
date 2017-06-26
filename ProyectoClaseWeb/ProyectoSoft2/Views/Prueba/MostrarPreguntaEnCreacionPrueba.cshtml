@@ -1,0 +1,26 @@
+﻿@model IEnumerable<ProyectoSoft2.Models.Prueba.PreguntaConRespuestaViewModel>
+
+@foreach (var Pregunta in Model)
+{
+    <div class="panel panel-default panelpregunta" style="border:none;" data-id="@Pregunta.Id">
+        <div class="panel-body status smart-form vote">
+            <div class="" style="padding:10px;">
+                <a href="javascript:void(0);" onclick="EditarPregunta(@Pregunta.Id)" type="button" class="pull-right" title="Editar Pregunta"><i class="fa fa-pencil text-warning fa-fw"></i></a>   
+                <a href="javascript:void(0);" onclick="borrarpregunta(this)" type="button" class="pull-right" title="Eliminar Pregunta"><i class="fa fa-times text-danger fa-fw"></i></a>
+                <strong>@Html.DisplayFor(modelItem => Pregunta.Pregunta) </strong>
+            </div>
+            <ul class="comments" style="margin:5px;">
+                @foreach (var respuesta in Pregunta.ListaRespuestas)
+                {
+                    <li>
+                        <label class="checkbox">  
+                            @Html.EditorFor(model => respuesta.RespuestaCorrecta, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                            <i></i>    @Html.DisplayFor(modelItem => respuesta.Respuesta)
+                        </label>     
+                    </li>
+                }
+            </ul>  
+        </div>
+    </div>
+}
+

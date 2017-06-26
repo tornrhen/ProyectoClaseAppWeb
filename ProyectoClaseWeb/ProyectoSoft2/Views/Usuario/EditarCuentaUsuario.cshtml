@@ -1,0 +1,78 @@
+﻿@model ProyectoSoft2.Models.Usuario.UsuarioViewModel
+
+
+<form class="smart-form" id="FormUsuario">
+    <fieldset style="padding-top:0px;">
+        @Html.HiddenFor(model => model.Id)
+      @Html.HiddenFor(model => model.IdAspNetUser)
+        <div class="row">
+                    <section>
+                        <span>@Html.LabelFor(model => model.RoleUsuario, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            @Html.DropDownListFor(model => model.RoleUsuario, new SelectList(ViewBag.ListaTipoUsuario, "Value", "Text"), null, new { @class = "form-control select2", style = "width:100%;" })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.RoleUsuario, "", new { @class = "text-danger" })
+                    </section>
+
+                    <section>
+                        <span>@Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </section>
+                    <section>
+                        <span>@Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </section>               
+                </div>                            
+    </fieldset>
+    <a class="btn btn-success btn-lg" onclick="EditarCuentaUsuario()"> Guardar</a>
+
+</form>
+
+
+
+
+
+
+@Scripts.Render("~/bundles/jqueryval")
+
+<script>
+        $("#TipoUsuario").select2();
+
+        function EditarCuentaUsuario() {
+
+            var $result = $("#FormUsuario").valid();
+            if (!$result) { return false;}
+
+            LoadWaitNotification();
+                $.ajax({
+                    url: "/Usuario/EditarCuentaUsuario",
+                    type: 'POST',
+                    dataType: 'json',
+                    data: $('#FormUsuario').serialize(),
+                    success: function (data) {
+
+                        if (data.Estado) {
+                            ShowboxSuccess(data.Mensaje, data.Titulo);
+                            new $.fn.dataTable.Api("#IdTabla").ajax.reload();
+                            $("#MyModal").modal("hide");
+                        } else ShowboxError(data.Mensaje, data.Titulo);
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert(textStatus + ": Editar Usuario");
+                        UnloadWaitNotification();
+                    },
+                    complete: function () { UnloadWaitNotification(); }
+                });
+
+        };
+
+
+
+
+</script>

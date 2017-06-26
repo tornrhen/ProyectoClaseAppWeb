@@ -1,0 +1,174 @@
+﻿@{
+    ViewBag.Title = "Crear Prueba";
+}
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa-file-o"></i> </span>
+        <h2><strong>Crear Prueba</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            @*<a href="/Usuario/Index" class="btn btn-primary"> Crear Nuevo</a>*@
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body no-padding">
+
+            <form class="smart-form" id="FormUsuario">
+
+                <fieldset style="padding-top:0px;">
+    
+                        <section>      
+                            <br />
+                            <a class="btn btn-link btn-lg" onclick="MostrarSeleccionPregunta()"><i class="fa fa-check-square-o"></i> Seleccionar Pregunta</a>
+                            <a class="btn btn-link btn-lg" onclick="MostrarCrearPregunta()"><i class="fa fa-plus"></i> Crear Pregunta</a>
+                            @*<a class="btn btn-link btn-lg pull-right" onclick="CrearUsuario()"> <strong><i class="fa fa-check-square-o fa-fw"></i>  Crear Prueba</strong></a>*@
+                             <hr style="margin-bottom:0px"/>
+                        </section>
+                    <section>
+                        <label class="input">
+                            <input type="text" id="NombrePrueba" class="input-lg" style="border:none; border-bottom:1px dashed; width:100%; padding:5px;" placeholder="Titulo de la Prueba">
+                        </label>         
+                    </section>  
+                    <div class="row">
+                        <section>
+                            <div id="ContenedorPreguntas" style="margin:10px;">
+
+                            </div>
+                        </section>
+                        <br />
+                    </div>
+          
+                </fieldset>
+                <footer>
+                    <a class="btn btn-success btn-lg" onclick="GuardarPrueba()"> <strong><i class="fa fa-check-square-o fa-fw"></i>  Crear Prueba</strong></a>
+                </footer>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@section Scripts{
+    
+    <script>
+        var IdModulo = @ViewBag.IdModulo;
+
+        function MostrarSeleccionPregunta() {
+            LoadWaitNotification();
+            $.ajax({
+                url: "/Prueba/MostrarSeleccionPreguntasParaPrueba",
+                type: "GET",
+                data: { IdModulo: IdModulo },
+                success: function (data) {
+                    $("#MyModalTitle").html("<b>Seleccionar Preguntas</b>");
+                    $("#MyModalBody").html(data);
+                    $("#MyModal").modal("show");      
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    ShowboxError(textStatus, "Error"); alert(textStatus);
+                    UnloadWaitNotification();
+                },
+                complete: function () { UnloadWaitNotification(); }
+            });
+        }
+
+        function MostrarCrearPregunta() {
+            LoadWaitNotification();
+            $.ajax({
+                url: "/Prueba/MostrarCrearPregunta",
+                type: "GET",
+                data: { IdModulo: IdModulo },
+                success: function (data) {
+                    $("#MyModalTitle").html("<b>Crear Pregunta</b>");
+                    $("#MyModalBody").html(data);
+                    $("#MyModal").modal("show");      
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    ShowboxError(textStatus, "Error"); alert(textStatus);
+                    UnloadWaitNotification();
+                },
+                complete: function () { UnloadWaitNotification(); }
+            });
+        }
+
+
+        function MostrarPreguntasEnVentana(list)
+        {
+
+            LoadWaitNotification();
+            $.ajax({
+                url: "/Prueba/MostrarPreguntaEnCreacionPrueba",
+                type: "POST",
+                data: { Lista: list },
+                success: function (data) {
+                    $("#ContenedorPreguntas").append(data);
+                    $("#MyModalBody").html("");
+                    $("#MyModal").modal("hide");
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    ShowboxError(textStatus, "Error"); alert(textStatus);
+                    UnloadWaitNotification();
+                },
+                complete: function () { UnloadWaitNotification(); }
+            });
+
+        }
+
+
+        function borrarfila(boton)
+        {
+            $(boton).parents("tr").remove();
+        }
+
+        function borrarpregunta(boton)
+        {
+            $(boton).parents(".panelpregunta").remove();
+        }
+
+        function GuardarPrueba()
+        {
+            var Lista = []
+            $('.panelpregunta').each(function () {
+                Lista.push($(this).data("id"));
+                
+            });
+            if ($("#NombrePrueba").val() == "") { ShowboxError("El Nombre de la Prueba no puede quedar vacio", "Crear Prueba"); return;}
+            if (Lista.length == 0) { ShowboxError("Tiene que seleccionar al menos una pregunta", "Crear Prueba"); return;}
+            var objeto = { NombrePrueba: $("#NombrePrueba").val(), IdModulo: IdModulo}
+            LoadWaitNotification();
+            $.ajax({
+                url: "/Prueba/CrearPrueba",
+                type: "POST",
+                data: { model: objeto, ListaPreguntas: Lista},
+                success: function (data) {
+                    if (data.resultado)
+                    {
+                        ShowboxSuccess("Se creo satisfactoriamente", "Crear Prueba");
+                        $("#ContenedorPreguntas").html("");
+                        $("#NombrePrueba").val("");
+
+                    }
+                    else ShowboxError("Error al crear la prueba", "Crear Prueba");
+              
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    ShowboxError(textStatus, "Error"); alert(textStatus);
+                    UnloadWaitNotification();
+                },
+                complete: function () { UnloadWaitNotification(); }
+            });
+            console.log(Lista);
+        }
+
+    </script>
+    
+}
+

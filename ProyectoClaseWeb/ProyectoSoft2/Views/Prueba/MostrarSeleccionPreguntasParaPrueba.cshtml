@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ProyectoSoft2.Models.Prueba.SeleccionPreguntaViewModel>
+
+
+<table class="table table-bordered table-responsive" cellspacing="0" width="100%" id="tablaSeleccionPreguntas">
+    <thead>
+        <tr>
+            <th class="text-center"><div class="smart-form pull-left"> <label class="checkbox"><input id="SelectAll" type="checkbox" name="checkboxItem"><i></i></label></div> Preguntas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr id="@item.Id">
+
+                    <td>
+                        <div class="smart-form">
+                            <label class="checkbox" style="padding-left:20px">
+                                @Html.EditorFor(modelItem => item.Seleccionado  )<i></i>
+                                @Html.DisplayFor(modelItem => item.Pregunta)
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<hr />
+<div class="form-group pull-right" style="padding-bottom:50px;">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+    @if (Model != null && Model.Any())
+    {<button type="button" onclick="GuardarSeleccionPreguntas()" class="btn btn-success">Seleccionar</button>}
+
+</div>
+<br />
+<br />
+
+<script>
+    $(document).ready(function () {
+        $("#tablaSeleccionPreguntas").dataTable();
+        $('input[type="checkbox"]').change(function () {
+            var checked = $(this).prop('checked');
+        });
+
+        $('#SelectAll').change(function () {
+            var table = new $.fn.dataTable.Api('#tablaSeleccionPreguntas');
+            var rows = table.rows({ search: 'applied' }).nodes();
+            $('input[type="checkbox"]', rows).prop('checked', this.checked);
+        })
+
+    });
+
+    function GuardarSeleccionPreguntas() {
+        var listcheckedrows = [];
+        var table = new $.fn.dataTable.Api("#tablaSeleccionPreguntas");
+        table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+            var nodo = this.node();
+            if ($(nodo).find('input').is(':checked')) listcheckedrows.push($(nodo).attr("id"));
+        });
+        MostrarPreguntasEnVentana(listcheckedrows);
+
+    }
+
+</script>

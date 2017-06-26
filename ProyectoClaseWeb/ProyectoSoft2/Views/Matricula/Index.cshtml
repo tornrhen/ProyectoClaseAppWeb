@@ -1,0 +1,81 @@
+﻿@model IEnumerable<ProyectoSoft2.Models.Matricula.ListaMatriculaViewModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-clipboard"></i> </span>
+        <h2><strong>Lista de Matriculas</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            <a href="/Matricula/Create" class="btn btn-primary"><i class="fa fa-plus fa-fw"></i>  Matricular</a>
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body">
+            <table class="table table-bordered table-responsive table-hover" id="IdTabla" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NombreUsuario)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Curso)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Centro)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Estado)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.EsAlumno)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NombreUsuario)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Curso)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Centro)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Estado)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EsAlumno)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                                @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+$(document).ready(function(){
+    $("#IdTabla").dataTable();
+
+});
+
+    </script>
+
+}
+

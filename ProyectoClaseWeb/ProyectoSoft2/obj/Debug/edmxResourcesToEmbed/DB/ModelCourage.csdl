@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="courageproModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AlumnoPorCurso">
+    <Key>
+      <PropertyRef Name="IdAlumnoPorCurso" />
+    </Key>
+    <Property Name="IdAlumnoPorCurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdCurso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cursos" Relationship="Self.FK__AlumnoPor__IdCur__282DF8C2" FromRole="AlumnoPorCurso" ToRole="Cursos" />
+    <NavigationProperty Name="Usuarios" Relationship="courageproModel.FK__AlumnoPor__IdUsu__2739D489" FromRole="AlumnoPorCurso" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Areas">
+    <Key>
+      <PropertyRef Name="IdArea" />
+    </Key>
+    <Property Name="IdArea" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreArea" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AreasPorCentro" Relationship="Self.FK__AreasPorC__IdAre__08B54D69" FromRole="Areas" ToRole="AreasPorCentro" />
+    <NavigationProperty Name="Cursos" Relationship="Self.FK__Cursos__IdArea__0C85DE4D" FromRole="Areas" ToRole="Cursos" />
+  </EntityType>
+  <EntityType Name="AreasPorCentro">
+    <Key>
+      <PropertyRef Name="IdAreasPorCentro" />
+    </Key>
+    <Property Name="IdAreasPorCentro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdArea" Type="Int32" Nullable="false" />
+    <Property Name="IdCentro" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK__AreasPorC__IdAre__08B54D69" FromRole="AreasPorCentro" ToRole="Areas" />
+    <NavigationProperty Name="Centros" Relationship="Self.FK__AreasPorC__IdCen__09A971A2" FromRole="AreasPorCentro" ToRole="Centros" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+    <NavigationProperty Name="Usuarios" Relationship="courageproModel.FK_Usuario_IdAspUser" FromRole="AspNetUsers" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Centros">
+    <Key>
+      <PropertyRef Name="IdCentro" />
+    </Key>
+    <Property Name="IdCentro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCentro" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="AreasPorCentro" Relationship="Self.FK__AreasPorC__IdCen__09A971A2" FromRole="Centros" ToRole="AreasPorCentro" />
+  </EntityType>
+  <EntityType Name="Cursos">
+    <Key>
+      <PropertyRef Name="IdCurso" />
+    </Key>
+    <Property Name="IdCurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreCurso" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdArea" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AlumnoPorCurso" Relationship="Self.FK__AlumnoPor__IdCur__282DF8C2" FromRole="Cursos" ToRole="AlumnoPorCurso" />
+    <NavigationProperty Name="Areas" Relationship="Self.FK__Cursos__IdArea__0C85DE4D" FromRole="Cursos" ToRole="Areas" />
+    <NavigationProperty Name="InstructorPorCurso" Relationship="Self.FK__Instructo__IdCur__245D67DE" FromRole="Cursos" ToRole="InstructorPorCurso" />
+    <NavigationProperty Name="ModulosPorCurso" Relationship="Self.FK__ModulosPo__IdCur__123EB7A3" FromRole="Cursos" ToRole="ModulosPorCurso" />
+  </EntityType>
+  <EntityType Name="InstructorPorCurso">
+    <Key>
+      <PropertyRef Name="IdInstructorPorCurso" />
+    </Key>
+    <Property Name="IdInstructorPorCurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdCurso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cursos" Relationship="Self.FK__Instructo__IdCur__245D67DE" FromRole="InstructorPorCurso" ToRole="Cursos" />
+    <NavigationProperty Name="Usuarios" Relationship="courageproModel.FK__Instructo__IdUsu__236943A5" FromRole="InstructorPorCurso" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="IdModulo" />
+    </Key>
+    <Property Name="IdModulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreModulo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ModulosPorCurso" Relationship="Self.FK__ModulosPo__IdMod__114A936A" FromRole="Modulos" ToRole="ModulosPorCurso" />
+    <NavigationProperty Name="Preguntas" Relationship="Self.FK__Preguntas__IdMod__151B244E" FromRole="Modulos" ToRole="Preguntas" />
+    <NavigationProperty Name="Pruebas" Relationship="Self.FK__Pruebas__IdModul__1AD3FDA4" FromRole="Modulos" ToRole="Pruebas" />
+  </EntityType>
+  <EntityType Name="ModulosPorCurso">
+    <Key>
+      <PropertyRef Name="IdModuloPorCurso" />
+    </Key>
+    <Property Name="IdModuloPorCurso" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdModulo" Type="Int32" Nullable="false" />
+    <Property Name="IdCurso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cursos" Relationship="Self.FK__ModulosPo__IdCur__123EB7A3" FromRole="ModulosPorCurso" ToRole="Cursos" />
+    <NavigationProperty Name="Modulos" Relationship="Self.FK__ModulosPo__IdMod__114A936A" FromRole="ModulosPorCurso" ToRole="Modulos" />
+  </EntityType>
+  <EntityType Name="Preguntas">
+    <Key>
+      <PropertyRef Name="IdPregunta" />
+    </Key>
+    <Property Name="IdPregunta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdModulo" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Modulos" Relationship="Self.FK__Preguntas__IdMod__151B244E" FromRole="Preguntas" ToRole="Modulos" />
+    <NavigationProperty Name="PreguntasPorPrueba" Relationship="Self.FK__Preguntas__IdPre__1DB06A4F" FromRole="Preguntas" ToRole="PreguntasPorPrueba" />
+    <NavigationProperty Name="Respuestas" Relationship="Self.FK__Respuesta__IdPre__17F790F9" FromRole="Preguntas" ToRole="Respuestas" />
+  </EntityType>
+  <EntityType Name="PreguntasPorPrueba">
+    <Key>
+      <PropertyRef Name="IdPreguntasPorPrueba" />
+    </Key>
+    <Property Name="IdPreguntasPorPrueba" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPregunta" Type="Int32" Nullable="false" />
+    <Property Name="IdPrueba" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Preguntas" Relationship="Self.FK__Preguntas__IdPre__1DB06A4F" FromRole="PreguntasPorPrueba" ToRole="Preguntas" />
+    <NavigationProperty Name="Pruebas" Relationship="Self.FK__Preguntas__IdPru__1EA48E88" FromRole="PreguntasPorPrueba" ToRole="Pruebas" />
+  </EntityType>
+  <EntityType Name="Pruebas">
+    <Key>
+      <PropertyRef Name="IdPrueba" />
+    </Key>
+    <Property Name="IdPrueba" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdModulo" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Modulos" Relationship="Self.FK__Pruebas__IdModul__1AD3FDA4" FromRole="Pruebas" ToRole="Modulos" />
+    <NavigationProperty Name="PreguntasPorPrueba" Relationship="Self.FK__Preguntas__IdPru__1EA48E88" FromRole="Pruebas" ToRole="PreguntasPorPrueba" />
+  </EntityType>
+  <EntityType Name="Respuestas">
+    <Key>
+      <PropertyRef Name="IdRespuesta" />
+    </Key>
+    <Property Name="IdRespuesta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdPregunta" Type="Int32" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Preguntas" Relationship="Self.FK__Respuesta__IdPre__17F790F9" FromRole="Respuestas" ToRole="Preguntas" />
+  </EntityType>
+  <Association Name="FK__AlumnoPor__IdCur__282DF8C2">
+    <End Role="Cursos" Type="Self.Cursos" Multiplicity="1" />
+    <End Role="AlumnoPorCurso" Type="Self.AlumnoPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cursos">
+        <PropertyRef Name="IdCurso" />
+      </Principal>
+      <Dependent Role="AlumnoPorCurso">
+        <PropertyRef Name="IdCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AreasPorC__IdAre__08B54D69">
+    <End Role="Areas" Type="Self.Areas" Multiplicity="1" />
+    <End Role="AreasPorCentro" Type="Self.AreasPorCentro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Areas">
+        <PropertyRef Name="IdArea" />
+      </Principal>
+      <Dependent Role="AreasPorCentro">
+        <PropertyRef Name="IdArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cursos__IdArea__0C85DE4D">
+    <End Role="Areas" Type="Self.Areas" Multiplicity="1" />
+    <End Role="Cursos" Type="Self.Cursos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Areas">
+        <PropertyRef Name="IdArea" />
+      </Principal>
+      <Dependent Role="Cursos">
+        <PropertyRef Name="IdArea" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AreasPorC__IdCen__09A971A2">
+    <End Role="Centros" Type="Self.Centros" Multiplicity="1" />
+    <End Role="AreasPorCentro" Type="Self.AreasPorCentro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Centros">
+        <PropertyRef Name="IdCentro" />
+      </Principal>
+      <Dependent Role="AreasPorCentro">
+        <PropertyRef Name="IdCentro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Instructo__IdCur__245D67DE">
+    <End Role="Cursos" Type="Self.Cursos" Multiplicity="1" />
+    <End Role="InstructorPorCurso" Type="Self.InstructorPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cursos">
+        <PropertyRef Name="IdCurso" />
+      </Principal>
+      <Dependent Role="InstructorPorCurso">
+        <PropertyRef Name="IdCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ModulosPo__IdCur__123EB7A3">
+    <End Role="Cursos" Type="Self.Cursos" Multiplicity="1" />
+    <End Role="ModulosPorCurso" Type="Self.ModulosPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cursos">
+        <PropertyRef Name="IdCurso" />
+      </Principal>
+      <Dependent Role="ModulosPorCurso">
+        <PropertyRef Name="IdCurso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ModulosPo__IdMod__114A936A">
+    <End Role="Modulos" Type="Self.Modulos" Multiplicity="1" />
+    <End Role="ModulosPorCurso" Type="Self.ModulosPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="IdModulo" />
+      </Principal>
+      <Dependent Role="ModulosPorCurso">
+        <PropertyRef Name="IdModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Preguntas__IdMod__151B244E">
+    <End Role="Modulos" Type="Self.Modulos" Multiplicity="1" />
+    <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="IdModulo" />
+      </Principal>
+      <Dependent Role="Preguntas">
+        <PropertyRef Name="IdModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Pruebas__IdModul__1AD3FDA4">
+    <End Role="Modulos" Type="Self.Modulos" Multiplicity="1" />
+    <End Role="Pruebas" Type="Self.Pruebas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="IdModulo" />
+      </Principal>
+      <Dependent Role="Pruebas">
+        <PropertyRef Name="IdModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Preguntas__IdPre__1DB06A4F">
+    <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="1" />
+    <End Role="PreguntasPorPrueba" Type="Self.PreguntasPorPrueba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preguntas">
+        <PropertyRef Name="IdPregunta" />
+      </Principal>
+      <Dependent Role="PreguntasPorPrueba">
+        <PropertyRef Name="IdPregunta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Respuesta__IdPre__17F790F9">
+    <End Role="Preguntas" Type="Self.Preguntas" Multiplicity="1" />
+    <End Role="Respuestas" Type="Self.Respuestas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Preguntas">
+        <PropertyRef Name="IdPregunta" />
+      </Principal>
+      <Dependent Role="Respuestas">
+        <PropertyRef Name="IdPregunta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Preguntas__IdPru__1EA48E88">
+    <End Role="Pruebas" Type="Self.Pruebas" Multiplicity="1" />
+    <End Role="PreguntasPorPrueba" Type="Self.PreguntasPorPrueba" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pruebas">
+        <PropertyRef Name="IdPrueba" />
+      </Principal>
+      <Dependent Role="PreguntasPorPrueba">
+        <PropertyRef Name="IdPrueba" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="courageproEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="AlumnoPorCurso" EntityType="Self.AlumnoPorCurso" />
+    <EntitySet Name="Areas" EntityType="Self.Areas" />
+    <EntitySet Name="AreasPorCentro" EntityType="Self.AreasPorCentro" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+    <EntitySet Name="Centros" EntityType="Self.Centros" />
+    <EntitySet Name="Cursos" EntityType="Self.Cursos" />
+    <EntitySet Name="InstructorPorCurso" EntityType="Self.InstructorPorCurso" />
+    <EntitySet Name="Modulos" EntityType="Self.Modulos" />
+    <EntitySet Name="ModulosPorCurso" EntityType="Self.ModulosPorCurso" />
+    <EntitySet Name="Preguntas" EntityType="Self.Preguntas" />
+    <EntitySet Name="PreguntasPorPrueba" EntityType="Self.PreguntasPorPrueba" />
+    <EntitySet Name="Pruebas" EntityType="Self.Pruebas" />
+    <EntitySet Name="Respuestas" EntityType="Self.Respuestas" />
+    <AssociationSet Name="FK__AlumnoPor__IdCur__282DF8C2" Association="Self.FK__AlumnoPor__IdCur__282DF8C2">
+      <End Role="Cursos" EntitySet="Cursos" />
+      <End Role="AlumnoPorCurso" EntitySet="AlumnoPorCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AreasPorC__IdAre__08B54D69" Association="Self.FK__AreasPorC__IdAre__08B54D69">
+      <End Role="Areas" EntitySet="Areas" />
+      <End Role="AreasPorCentro" EntitySet="AreasPorCentro" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cursos__IdArea__0C85DE4D" Association="Self.FK__Cursos__IdArea__0C85DE4D">
+      <End Role="Areas" EntitySet="Areas" />
+      <End Role="Cursos" EntitySet="Cursos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AreasPorC__IdCen__09A971A2" Association="Self.FK__AreasPorC__IdCen__09A971A2">
+      <End Role="Centros" EntitySet="Centros" />
+      <End Role="AreasPorCentro" EntitySet="AreasPorCentro" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Instructo__IdCur__245D67DE" Association="Self.FK__Instructo__IdCur__245D67DE">
+      <End Role="Cursos" EntitySet="Cursos" />
+      <End Role="InstructorPorCurso" EntitySet="InstructorPorCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ModulosPo__IdCur__123EB7A3" Association="Self.FK__ModulosPo__IdCur__123EB7A3">
+      <End Role="Cursos" EntitySet="Cursos" />
+      <End Role="ModulosPorCurso" EntitySet="ModulosPorCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ModulosPo__IdMod__114A936A" Association="Self.FK__ModulosPo__IdMod__114A936A">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="ModulosPorCurso" EntitySet="ModulosPorCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Preguntas__IdMod__151B244E" Association="Self.FK__Preguntas__IdMod__151B244E">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="Preguntas" EntitySet="Preguntas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Pruebas__IdModul__1AD3FDA4" Association="Self.FK__Pruebas__IdModul__1AD3FDA4">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="Pruebas" EntitySet="Pruebas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Preguntas__IdPre__1DB06A4F" Association="Self.FK__Preguntas__IdPre__1DB06A4F">
+      <End Role="Preguntas" EntitySet="Preguntas" />
+      <End Role="PreguntasPorPrueba" EntitySet="PreguntasPorPrueba" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Respuesta__IdPre__17F790F9" Association="Self.FK__Respuesta__IdPre__17F790F9">
+      <End Role="Preguntas" EntitySet="Preguntas" />
+      <End Role="Respuestas" EntitySet="Respuestas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Preguntas__IdPru__1EA48E88" Association="Self.FK__Preguntas__IdPru__1EA48E88">
+      <End Role="Pruebas" EntitySet="Pruebas" />
+      <End Role="PreguntasPorPrueba" EntitySet="PreguntasPorPrueba" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+    <EntitySet Name="Usuarios" EntityType="courageproModel.Usuarios" />
+    <AssociationSet Name="FK__AlumnoPor__IdUsu__2739D489" Association="courageproModel.FK__AlumnoPor__IdUsu__2739D489">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="AlumnoPorCurso" EntitySet="AlumnoPorCurso" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_IdAspUser" Association="courageproModel.FK_Usuario_IdAspUser">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Usuarios" EntitySet="Usuarios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Instructo__IdUsu__236943A5" Association="courageproModel.FK__Instructo__IdUsu__236943A5">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="InstructorPorCurso" EntitySet="InstructorPorCurso" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdAspNetUser" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IdCentro" Type="Int32" />
+    <NavigationProperty Name="AlumnoPorCurso" Relationship="courageproModel.FK__AlumnoPor__IdUsu__2739D489" FromRole="Usuarios" ToRole="AlumnoPorCurso" />
+    <NavigationProperty Name="AspNetUsers" Relationship="courageproModel.FK_Usuario_IdAspUser" FromRole="Usuarios" ToRole="AspNetUsers" />
+    <NavigationProperty Name="InstructorPorCurso" Relationship="courageproModel.FK__Instructo__IdUsu__236943A5" FromRole="Usuarios" ToRole="InstructorPorCurso" />
+  </EntityType>
+  <Association Name="FK__AlumnoPor__IdUsu__2739D489">
+    <End Type="courageproModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="courageproModel.AlumnoPorCurso" Role="AlumnoPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="AlumnoPorCurso">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_IdAspUser">
+    <End Type="courageproModel.AspNetUsers" Role="AspNetUsers" Multiplicity="0..1" />
+    <End Type="courageproModel.Usuarios" Role="Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Usuarios">
+        <PropertyRef Name="IdAspNetUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Instructo__IdUsu__236943A5">
+    <End Type="courageproModel.Usuarios" Role="Usuarios" Multiplicity="1" />
+    <End Type="courageproModel.InstructorPorCurso" Role="InstructorPorCurso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="InstructorPorCurso">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

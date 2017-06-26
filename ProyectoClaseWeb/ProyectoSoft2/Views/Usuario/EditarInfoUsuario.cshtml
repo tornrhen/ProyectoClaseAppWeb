@@ -1,0 +1,79 @@
+﻿@model ProyectoSoft2.Models.Usuario.UsuarioViewModel
+
+<form class="smart-form" id="FormInfoUsuario">
+  
+    <fieldset style="padding-top:0px;">
+        @Html.HiddenFor(model =>model.Id)
+                <div class="row">
+                    <section>
+                        <span>@Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "" } })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                    </section>
+                    <section>
+                        <span>@Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                    </section>
+                    <section>
+                        <span>@Html.LabelFor(model => model.BirthDate, htmlAttributes: new { @class = "control-label" })</span>
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            @Html.EditorFor(model => model.BirthDate, new { htmlAttributes = new { @class = "form-control", @Value = Model.BirthDate.ToString("dd/MMMM/yyyy") } })
+                        </label>
+                        @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
+                    </section>
+                </div>
+    </fieldset>
+    <a class="btn btn-success btn-lg" onclick="EditarInfoUsuario()"> Guardar</a>
+</form>
+
+@Scripts.Render("~/bundles/jqueryval")
+
+<script>
+       
+        $("#BirthDate")
+            .datepicker({
+                dateFormat: 'dd/M/yy',
+                changeMonth: true,
+                changeYear: true,
+                prevText: '<i class="fa fa-chevron-left"></i>',
+                nextText: '<i class="fa fa-chevron-right"></i>'
+            });
+
+
+        function EditarInfoUsuario() {
+
+            var $result = $("#FormInfoUsuario").valid();
+            if (!$result) { return false;}
+
+            LoadWaitNotification();
+                $.ajax({
+                    url: "/Usuario/EditarInfoUsuario",
+                    type: 'POST',
+                    dataType: 'json',
+                    data: $('#FormInfoUsuario').serialize(),
+                    success: function (data) {
+                        if (data.Estado) {
+                            ShowboxSuccess(data.Mensaje, data.Titulo);
+                            new $.fn.dataTable.Api("#IdTabla").ajax.reload();
+                            $("#MyModal").modal("hide");
+                        } else ShowboxError(data.Mensaje, data.Titulo);
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert(textStatus + ": editar usuario");
+                        UnloadWaitNotification();
+                    },
+                    complete: function () { UnloadWaitNotification(); }
+                });
+
+        };
+
+
+
+
+</script>

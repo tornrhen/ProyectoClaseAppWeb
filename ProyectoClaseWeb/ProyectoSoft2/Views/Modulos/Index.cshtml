@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProyectoSoft2.DB.Modulos>
+
+@{
+    ViewBag.Title = "Modulos";
+}
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-cog"></i> </span>
+        <h2><strong>Lista de Modulos</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            <a href="/Modulos/Create" class="btn btn-primary"><i class="fa fa-plus fa-fw"></i>   Crear Modulo</a>
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body">
+            <table class="table table-bordered table-responsive table-hover" id="IdTabla" style="width: 100%;">
+               <thead>
+                   <tr>
+                       <th>
+                           @Html.DisplayNameFor(model => model.NombreModulo)
+                       </th>
+                       <th>Acciones</th>
+                   </tr>
+               </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NombreModulo)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Editar", "Edit", new { id = item.IdModulo }) |
+                               
+                                @Html.ActionLink("Eliminar", "Delete", new { id = item.IdModulo }) |
+                                @Html.ActionLink("Crear Prueba", "MostrarCrearPrueba", "Prueba", new { id = item.IdModulo },null)
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+$(document).ready(function(){
+    $("#IdTabla").dataTable();
+
+});
+
+    </script>
+
+}

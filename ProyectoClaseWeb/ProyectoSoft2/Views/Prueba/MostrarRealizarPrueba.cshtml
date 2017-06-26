@@ -1,0 +1,76 @@
+﻿@model ProyectoSoft2.DB.Pruebas
+
+@{
+    ViewBag.Title = "Prueba: "+ @Model.Descripcion;
+}
+
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-file-o"></i> </span>
+        <h2><strong> Prueba: @Model.Descripcion</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            @*<a href="/Usuario/Index" class="btn btn-primary"> Crear Nuevo</a>*@
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body no-padding">
+
+            <form class="smart-form" id="FormPrueba">
+                <fieldset style="padding-top:0px;">
+                     <div class="row">
+                   
+                            <div id="ContenedorPreguntas" style="margin:10px;">
+
+                                @foreach (var Pregunta in Model.PreguntasPorPrueba)
+                                {
+                                    <div class="col-md-6 col-lg-6">
+
+
+                                        <div class="panel panel-default panelpregunta" style="border:none;" data-id="@Pregunta.Id">
+                                            <div class="panel-body status smart-form vote">
+                                                <div class="" style="padding:0px; padding-top:15px; padding-left:10px;">
+                                                    <strong>@Html.DisplayFor(modelItem => Pregunta.Preguntas.Descripcion) </strong>
+                                                </div>
+                                                <section>
+                                                    <ul class="comments" style="margin:5px;">
+                                                        <li>
+                                                            @foreach (var respuesta in Pregunta.Preguntas.Respuestas)
+                                                        {
+
+                                                        <label class="radio">
+                                                            <input type="radio" name="IdPregunta-@Pregunta.IdPregunta" data-id="@respuesta.IdRespuesta">
+                                                            @*@Html.RadioButtonFor(model => respuesta.RespuestaCorrecta, new { @class = "radio" })*@
+                                                            <i></i> @Html.DisplayFor(modelItem => respuesta.Descripcion)
+                                                        </label>
+                                                        }
+                                                        </li>
+
+                                                    </ul>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                    
+                        <br />
+                    </div>
+
+                </fieldset>
+                <footer>
+                    <a class="btn btn-success btn-lg" onclick="TerminarPrueba()"> <strong><i class="fa fa-check-square-o fa-fw"></i>  Guardar Prueba</strong></a>
+                </footer>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

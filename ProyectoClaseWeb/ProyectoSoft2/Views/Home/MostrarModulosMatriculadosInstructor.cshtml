@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ProyectoSoft2.DB.Cursos>
+
+@foreach (var curso in Model)
+{
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row" style="padding:25px; padding-top:0px;">
+                <h2 style="margin:0px;"><b>@curso.NombreCurso</b></h2>
+                <hr style="margin:0px;" />
+            </div>
+
+            @foreach (var modulo in curso.ModulosPorCurso)
+            {
+                <div class="col-sm-4 col-lg-3">
+
+                    <div class="panel panel-default">
+                        <div class="panel-body status smart-form vote">
+                            <div class="who clearfix" style="padding:10px; background-color:rgba(0,0,0,.07)">
+                                <span class="name"><b>@modulo.Modulos.NombreModulo</b></span>
+                            </div>
+                            <ul class="comments">
+                                <li>
+                                    @Html.ActionLink("+ Nueva Prueba", "MostrarCrearPrueba", "Prueba", new { id = modulo.IdModulo }, null)
+                                </li>
+                                @foreach (var prueba in modulo.Modulos.Pruebas.Where(x => x.Estado))
+                                {
+                                    <li>
+                                        <i class="fa fa-file-o fa-3x fa-pull-left"></i>
+                                        <span class="name"><a class="btn btn-link"><strong>@prueba.Descripcion</strong> <i class="fa fa-arrow-right"></i></a></span>
+                                        <span class="from"><b> Duracion: </b> @prueba.DuracionMin minutos</span><br />
+                                        <a href="javascript:void(0);" class="pull-right" title="Eliminar"><i class="fa fa-trash-o fa-fw text-danger"></i></a>
+                                        <a href="javascript:void(0);" class="pull-right" title="Editar"><i class="fa fa-pencil fa-fw text-success"></i></a>
+                                        <br />
+                                     </li>
+                                }
+                                @*<li>
+                                            <a href="javascript:void(0);">+ Info</a>
+                                    </li>*@
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    </div>
+
+
+}

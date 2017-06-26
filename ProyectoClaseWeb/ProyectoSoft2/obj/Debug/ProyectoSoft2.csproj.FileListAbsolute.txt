@@ -1,0 +1,328 @@
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.csprojResolveAssemblyReference.cache
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\ApplicationInsights.config
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\csc.exe
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\vbc.exe
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll.config
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.pdb
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Owin.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\WebGrease.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.pdb
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.dll
+C:\Users\betty\Documents\GitHub\2017-II-1394-IGII-G1\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.pdb
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ApplicationInsights.config
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\csc.exe
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Collections.Immutable.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Reflection.Metadata.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\vbc.exe
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe.config
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll.config
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.pdb
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Agent.Intercept.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Web.Infrastructure.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Owin.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\WebGrease.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.pdb
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.csprojResolveAssemblyReference.cache
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.dll
+D:\2017-II-1394-IGII-G1-master\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ApplicationInsights.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\csc.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\vbc.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\ProyectoSoft2.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\WebGrease.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.Web.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.ApplicationInsights.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Helpers.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Mvc.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Optimization.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.Razor.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\System.Web.WebPages.Razor.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Antlr3.Runtime.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Newtonsoft.Json.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\EntityFramework.SqlServer.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.csprojResolveAssemblyReference.cache
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\2017-II-1394-IGII-G1-master\ProyectoSoft2\ProyectoSoft2\obj\Debug\ProyectoSoft2.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\ApplicationInsights.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\csc.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\vbc.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\ProyectoSoft2.dll.config
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\ProyectoSoft2.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\ProyectoSoft2.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Antlr3.Runtime.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\EntityFramework.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\EntityFramework.SqlServer.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.Web.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.ApplicationInsights.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Newtonsoft.Json.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Owin.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Helpers.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Mvc.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Optimization.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Razor.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.Razor.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\WebGrease.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.Web.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.ApplicationInsights.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Helpers.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Mvc.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Optimization.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.Razor.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\System.Web.WebPages.Razor.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Antlr3.Runtime.pdb
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Newtonsoft.Json.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\EntityFramework.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\EntityFramework.SqlServer.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\obj\Debug\ProyectoSoft2.csprojResolveAssemblyReference.cache
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\obj\Debug\ProyectoSoft2.dll
+C:\Users\tornr\Documents\Desarrollo Web\Clase\ProyectoClaseWeb\ProyectoClaseWeb\ProyectoSoft2\obj\Debug\ProyectoSoft2.pdb

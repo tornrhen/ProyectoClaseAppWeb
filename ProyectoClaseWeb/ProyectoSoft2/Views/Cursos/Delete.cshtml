@@ -1,0 +1,40 @@
+﻿@model ProyectoSoft2.DB.Cursos
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar Curso</h2>
+
+<h3>Esta seguro que desea eliminar este registro?</h3>
+<div>
+
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCurso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Areas.NombreArea)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Areas.NombreArea)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <a href="/Cursos/Index" class="btn btn-default"> Cancelar</a>
+            <input type="submit" value="Eliminar" class="btn btn-danger" /> 
+         
+        </div>
+    }
+</div>

@@ -1,0 +1,104 @@
+﻿@model ProyectoSoft2.Models.Prueba.PreguntaConRespuestaViewModel
+
+@Scripts.Render("~/bundles/jqueryval")
+
+<style>
+    .editarinput {
+    border-style: dashed !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    padding-bottom:0px !important;
+     width:100% !important;
+
+    }
+
+.fila-base{ display: none; }  
+
+</style>
+<form class="smart-form" id="FormCrearPregunta">
+    <fieldset style="padding-top:10px;">
+        <section>
+            <label class="textarea textarea-resizable">
+                <textarea id="Pregunta" rows="3" class="custom-scroll" style="border-style:dashed;" name="Pregunta" placeholder="Ingrese la pregunta"></textarea>
+            </label>
+        </section>
+
+        <section>
+            <a class="btn btn-link btn-xs" type="button" href="#" onclick="AgregarRespuesta()"><i class="fa fa-plus"></i> Agregar Respuesta</a>
+            <table class="table" id="tablaresp" style="width:100%;">
+                @*<thead>
+                   <tr><th></th><th></th><th></th></tr>
+                </thead>*@
+                <tbody id="bodyRespuestas">
+                    <tr class="fila-base"><td style="border:none; width:1%;" ><div class="smart-form"><label class="checkbox" style="padding:0px; margin-bottom:7px;"><input class="check-box" type="checkbox" value="true"><input type="hidden" value="false"><i></i></label> </div></td>
+                        <td style="border:none;"><label class="input"><input type="text" class="editarinput" placeholder="Ingrese Respuesta"></label></td>
+                        <td style="border:none; width:1%;"><a href="#" type="button" onclick="borrarfila(this)" class="btn btn-link"><i class="fa fa-times fa-danger"></i></a></td>
+                    </tr>                       
+                </tbody>
+            </table>
+        </section>
+    </fieldset>
+</form>
+<hr />
+<div class="form-group pull-right" style="padding-bottom:50px;">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+    <button type="button" onclick="CrearPregunta()" class="btn btn-success">Guardar</button>
+</div>
+<br />
+<br />
+
+
+<script>
+    function AgregarRespuesta()
+    {
+        $("#tablaresp tbody tr:eq(0)").clone().removeClass('fila-base').addClass("fila-respuesta").appendTo("#tablaresp tbody");
+    }
+
+
+
+    $('#tablaresp tbody').on("change",'tr input[type="checkbox"]',function () {
+        var state = this.checked;
+        $('#tablaresp tr').each(function () { 
+            $(this).find('input[type="checkbox"]').prop('checked', false);
+        });
+        $(this).prop('checked', state);
+    });
+
+    function CrearPregunta()
+    {
+        var ListaRows = []
+        $('#tablaresp .fila-respuesta').each(function () {
+             var check= $(this).find('input[type="checkbox"]').prop('checked');
+             var respuesta = $(this).find('.editarinput').val();
+             var obj = { Respuesta: respuesta, RespuestaCorrecta: check };
+             ListaRows.push(obj);
+        });
+       
+        if ($("#Pregunta").val() == "") { ShowboxError("El campo pregunta no puede quedar vacio", "Crear Prueba"); return;}
+        if (ListaRows.length == 0) { ShowboxError("Tiene que crear al menos una respuesta", "Crear Prueba"); return;}
+        var objeto = { Pregunta: $("#Pregunta").val(), IdModulo: '@Model.IdModulo' }
+
+        LoadWaitNotification();
+        $.ajax({
+            url: "/Prueba/CrearPregunta",
+            type: "POST",
+            data: { model: objeto, ListaRespuestas: ListaRows},
+            success: function (data) {
+                if (data.resultado)
+                {
+                    ShowboxSuccess("Se creo satisfactoriamente", "Crear Pregunta")
+                    var listaa = []; listaa.push(data.idPregunta);
+                    MostrarPreguntasEnVentana(listaa);
+                }
+                else ShowboxError("Error al crear la pregunta", "Crear Pregunta")
+              
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                ShowboxError(textStatus, "Error"); alert(textStatus);
+                UnloadWaitNotification();
+            },
+            complete: function () { UnloadWaitNotification(); }
+        });
+    }
+</script>

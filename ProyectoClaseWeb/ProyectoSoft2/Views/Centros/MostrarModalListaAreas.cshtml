@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProyectoSoft2.Models.Centro.ListaAreasAsignadasACentroViewModel>
+
+
+
+<table class="table table-bordered table-responsive" cellspacing="0" width="100%" id="tablaAreasCentro">
+    <thead>
+        <tr>
+            <th class="text-center"><div class="smart-form pull-left"> <label class="checkbox"><input id="SelectAll" type="checkbox" name="checkboxItem"><i></i></label></div> Area</th>       
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            { 
+                <tr id="@item.IdArea">
+       
+                        <td>
+                            <div class="smart-form">
+                                <label class="checkbox" style="padding-left:20px">
+                                    @Html.EditorFor(modelItem => item.EstaAsignado)<i></i>
+                                    @Html.DisplayFor(modelItem => item.Nombre)
+                                </label>
+                            </div>
+                        </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+<hr />
+<div class="form-group pull-right" style="padding-bottom:50px;">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+    @if (@Model != null)
+    {<button type="button" onclick="GuardarSeleccionAreas('@ViewBag.IdCentro')" class="btn btn-success">Guardar</button>}
+</div>
+<br />
+<br />
+
+<script>
+
+    function GuardarSeleccionAreas(idCentro) {
+        var listcheckedrows = [];
+        var table = new $.fn.dataTable.Api("#tablaAreasCentro");
+        table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+            var nodo = this.node();
+            if ($(nodo).find('input').is(':checked')) listcheckedrows.push($(nodo).attr("id"));
+        });
+
+        $.ajax({
+            url: "/Centros/GuardarAsignacionDeAreas",
+            type: "POST",
+            data: { Lista: listcheckedrows, IdCentro: idCentro },
+            success: function (data) {
+                if (data.Estado) {
+                    ShowboxSuccess(data.Mensaje, data.Titulo);
+                    $("#MyModal").modal("hide");
+                } else ShowboxError(data.Mensaje, data.Titulo);
+              
+            },
+            error: function (data) {
+                console.log("error");
+            }
+        });
+
+    }
+</script>

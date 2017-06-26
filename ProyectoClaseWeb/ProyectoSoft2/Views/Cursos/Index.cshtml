@@ -1,0 +1,117 @@
+﻿@model IEnumerable<ProyectoSoft2.DB.Cursos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-cog"></i> </span>
+        <h2><strong>Lista de Cursos</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            <a href="/Cursos/Create" class="btn btn-primary"><i class="fa fa-plus fa-fw"></i>   Crear Curso</a>
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body">
+            <table class="table table-bordered table-responsive table-hover" id="IdTabla" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.NombreCurso)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Areas.NombreArea)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.NombreCurso)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Areas.NombreArea)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.IdCurso }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.IdCurso }) |   
+<a type="button" onclick="MostrarModalLista(@item.IdCurso, 'MostrarModalListaModulos', 'Modulo')" href="#">Asignar Modulo a Curso</a> 
+    @*<a type="button" onclick="MostrarModalLista(@item.IdCurso, 'MostrarModalListaAlumnos', 'Alumno')" href="#">Asignar Alumnos</a> |
+    <a type="button" onclick="MostrarModalLista(@item.IdCurso, 'MostrarModalListaInstructor','Instructor')" href="#">Asignar Instructor</a>*@
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+<script>
+$(document).ready(function(){
+    $("#IdTabla").dataTable();
+
+});
+
+function MostrarModalLista(Id, ActionName, Tipo) {
+    LoadWaitNotification();
+    $.ajax({
+        url: "/Cursos/" + ActionName,
+        type: "GET",
+    data: { id: Id },
+    success: function (data) {
+        $("#MyModalTitle").html("<b>Asignar "+Tipo+" a Curso</b>");
+        $("#MyModalBody").html(data);
+        $("#MyModal").modal("show");      
+    },
+    error: function (xhr, textStatus, errorThrown) {
+        ShowboxError(textStatus, "Error"); alert(textStatus);
+        UnloadWaitNotification();
+    },
+    complete: function () { UnloadWaitNotification(); }
+});
+}
+
+
+function GuardarSeleccion(idCurso, IdTabla, ActionName ) {
+    var listcheckedrows = [];
+    var table = new $.fn.dataTable.Api("#" + IdTabla);
+    table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+        var nodo = this.node();
+        if ($(nodo).find('input').is(':checked')) listcheckedrows.push($(nodo).attr("id"));
+    });
+    LoadWaitNotification();
+    $.ajax({
+        url: "/Cursos/" + ActionName,
+        type: "POST",
+        data: { Lista: listcheckedrows, IdCurso: idCurso },
+        success: function (data) {
+            if (data.Estado) {
+                ShowboxSuccess(data.Mensaje, data.Titulo);
+                $("#MyModal").modal("hide");
+            } else ShowboxError(data.Mensaje, data.Titulo);
+
+        },
+        error: function (xhr, textStatus, errorThrown) {
+            ShowboxError(textStatus, "Error"); alert(textStatus);
+            UnloadWaitNotification();
+        },
+        complete: function () { UnloadWaitNotification(); }
+    });
+
+}
+
+</script>
+
+}

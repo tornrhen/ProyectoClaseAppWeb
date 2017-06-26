@@ -1,0 +1,99 @@
+﻿@model IEnumerable<ProyectoSoft2.DB.Centros>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="jarviswidget jarviswidget-color-blueDark" id="">
+    <header role="heading">
+        <span class="widget-icon"> <i class="fa fa-cog"></i> </span>
+        <h2><strong>Lista de Centros</strong></h2>
+        <div class="widget-toolbar" role="menu">
+            <a href="/Centros/Create" class="btn btn-primary"><i class="fa fa-plus fa-fw"></i>   Crear Centro</a>
+        </div>
+    </header>
+    <!-- widget div-->
+    <div>
+        <!-- widget content -->
+        <div class="widget-body">
+            <table class="table table-bordered table-responsive table-hover" id="IdTabla" style="width: 100%;">
+               <thead>
+                   <tr>
+                       <th>
+                           @Html.DisplayNameFor(model => model.NombreCentro)
+                       </th>
+                       <th>
+                           @Html.DisplayNameFor(model => model.Direccion)
+                       </th>
+                       <th></th>
+                   </tr>
+               </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.NombreCentro)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Direccion)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "Edit", new { id = item.IdCentro }) |
+                                 
+                                    @Html.ActionLink("Eliminar", "Delete", new { id = item.IdCentro }) |
+                                    <a type="button" onclick="MostrarModalListaAreas(@item.IdCentro)" href="#">Asignar Areas</a>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+            </table>
+                      
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+$(document).ready(function(){
+    $("#IdTabla").dataTable();
+
+});
+
+function MostrarModalListaAreas(id) {
+    $.ajax({
+        url: "@Url.Action("MostrarModalListaAreas", "Centros")",
+        type: "GET",
+    data: { id: id },
+    success: function (data) {
+        $("#MyModalTitle").html("<b>Asignar Areas a Centro</b>");
+        $("#MyModalBody").html(data);
+        $("#MyModal").modal("show");
+        $("#tablaAreasCentro").dataTable();
+        $('input[type="checkbox"]').change(function () {
+            var checked = $(this).prop('checked');    
+        });
+
+        $('#SelectAll').change(function () {
+            var table = new $.fn.dataTable.Api('#tablaAreasCentro');
+            var rows = table.rows({ search: 'applied' }).nodes();
+            $('input[type="checkbox"]', rows).prop('checked', this.checked);
+        });
+
+
+    },
+    error: function (data) {
+        alert("error");
+
+    }
+});
+}
+
+
+    </script>
+
+}
